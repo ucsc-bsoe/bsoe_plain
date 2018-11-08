@@ -204,17 +204,25 @@ ul ul {
   text-shadow: none !important;
 }
 
-@media only screen and (min-width: 36em) {
+
+/***************************************************************************************************
+* Preview section
+***************************************************************************************************/
+
+@media only screen and (min-width: 0) {
   .node-preview-container .form-type-select {
     margin-left: 0;
+    display: block;
   }
 }
 
 .node-preview-container {
-  top: 30px;
+  top: 104px;
   left: 30px;
   width: 70%;
   background: #fff;
-  box-shadow: -1px 0 3px 1px rgba(0,0,0,0.5);
+  z-index: 1000;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
   border: 5px solid lightgrey;
+  padding: 20px;
 }
